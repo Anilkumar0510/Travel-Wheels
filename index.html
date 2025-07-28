@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TravelWheels - Bus Tours & Packages</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="text-white py-4 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-4xl font-bold tracking-tight font-playfair">TravelWheels</h1>
+            <nav>
+                <ul class="flex space-x-10 text-lg">
+                    <li><a href="#home" class="nav-link hover:text-coral-500 transition duration-300">Home</a></li>
+                    <li><a href="#buses" class="nav-link hover:text-coral-500 transition duration-300">Our Vehicles</a>
+                    </li>
+                    <li><a href="#tours" class="nav-link hover:text-coral-500 transition duration-300">Tour Packages</a>
+                    </li>
+                    <li><a href="#about" class="nav-link hover:text-coral-500 transition duration-300">About Us</a></li>
+                    <li><a href="#whatsapp" class="nav-link hover:text-coral-500 transition duration-300">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero-carousel h-[auto] text-white">
+        <div class="text-center px-4 py-10">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 leading-tight font-playfair text-animate"> Discover the World
+                with Us</h2>
+            <p class="text-lg md:text-xl mb-8 text-gray-100 text-animate text-animate-delay">This is about the
+                Travelswheels , We are ready to give you a amazing travel experince</p>
+            <a href="#tours"
+                class="btn-primary bg-coral-500 px-8 py-4 rounded-full text-lg font-semibold text-white hover:bg-coral-600"
+                style="border: 2px solid white; border-radius: 23px;">Explore Packages</a>
+            <br><br>
+            <div class="relative w-full max-w-md mx-auto">
+            <input id="search-input" type="search" class="form-control w-full pr-10"
+                    placeholder="Explore Tours and Travel with Enjoy &#128512;">
+                <i
+                    class="fas fa-search absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 border-radius-full"></i>
+        
+            </div>
+        </div>
+        <div class="container mx-auto px-4 mt-6">
+            <img src="./img1.png" alt="image" style="width: 100vw; height: auto; ">
+        </div>
+        <div style="background-color: rgb(164, 100, 17);"> Why Choose AbhiBus for Bus Ticket Booking ?<br>
+
+            <p>AbhiBus is India’s fastest growing online ticket booking platform. AbhiBus is the official ticketing
+                partner of several State Road Transport Corporation (SRTC) operators and over 4000+ private bus partners
+                covering more than 3,50,000 bus routes</p>
+        </div>
+    </section>
+
+        <section id="tours" class="py-16 bg-ivory-50 fade-in-section section-bg">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-12 text-blue-900 font-playfair">Tour Packages</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-card rounded-xl shadow-lg p-6 animate-card border-t-4 border-coral-500 glow-border">
+                        <img src="./araku.png" alt="Araku and Vizag"
+                            class="w-full h-56 object-cover rounded-lg">
+                        <h3 class="text-2xl font-semibold mt-4 text-blue-900 font-playfair"><i
+                                class="fas fa-map-marker-alt mr-2"></i>Araku and Vizag</h3>
+                        <p class="text-gray-700">Duration: 3 Days / 2 Nights</p>
+                        <p class="text-gray-700">Price: 5000 per person</p>
+                        <p class="text-gray-700 mt-3">Description: Explore scenic coastal towns with our Luxury Coach.
+                            Includes guided tours, meals, and accommodation.</p>
+                        <div class="mt-4 flex space-x-4">
+                            <a href="https://wa.me/916302078906?text=Hello%20TravelWheels!%20I’m%20interested%20in%20the%20Araku%20and%20Vizag"
+                                class="btn-primary bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600"
+                                target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                            <a href="tel:‪+916302078906‬"
+                                class="btn-primary bg-blue-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-600">Call
+                                Us</a>
+                        </div>
+                    </div>
+                    <div class="bg-card rounded-xl shadow-lg p-6 animate-card border-t-4 border-coral-500 glow-border">
+                        <img src="./maredumalli.png" alt="Maredumelli" class="w-full h-56 object-cover rounded-lg">
+                        <h3 class="text-2xl font-semibold mt-4 text-blue-900 font-playfair"><i
+                                class="fas fa-mountain mr-2"></i>Maredumelli</h3>
+                        <p class="text-gray-700">Duration: 5 Days / 4 Nights</p>
+                        <p class="text-gray-700">Price: 4000 per person</p>
+                        <p class="text-gray-700 mt-3">Description: Journey through breathtaking mountains with our
+                            Double Decker bus. Includes hiking, lodging, and breakfast.</p>
+                        <div class="mt-4 flex space-x-4">
+                            <a href="https://wa.me/916302078906?text=Hello%20TravelWheels!%20I’m%20interested%20in%20the%20Maredumelli"
+                                class="btn-primary bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600"
+                                target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                            <a href="tel:‪+916302078906‬"
+                                class="btn-primary bg-blue-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-600">Call
+                                Us</a>
+                        </div>
+                    </div>
+                    <div class="bg-card rounded-xl shadow-lg p-6 animate-card border-t-4 border-coral-500 glow-border">
+                        <img src="./goa.png" alt="Goa Beaches" class="w-full h-56 object-cover rounded-lg">
+                        <h3 class="text-2xl font-semibold mt-4 text-blue-900 font-playfair"><i
+                                class="fas fa-umbrella-beach mr-2"></i>Goa Beach Getaway</h3>
+                        <p class="text-gray-700">Duration: 4 Days / 3 Nights</p>
+                    <p class="text-gray-700">Price: 6000 per person</p>
+                    <p class="text-gray-700 mt-3">Description: Relax on the sunny beaches of Goa with our Mini Bus.
+                        Includes beachside accommodation, guided tours, and evening entertainment.</p>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="https://wa.me/916302078906?text=Hello%20TravelWheels!%20I’m%20interested%20in%20the%20Goa%20Beach%20Getaway"
+                            class="btn-primary bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600"
+                            target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                        <a href="tel:‪+916302078906‬"
+                            class="btn-primary bg-blue-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-600">Call
+                            Us</a>
+                    </div>
+                </div>
+                <div class="bg-card rounded-xl shadow-lg p-6 animate-card border-t-4 border-coral-500 glow-border">
+                    <img src="./hampi.png" alt="Hampi Ruins" class="w-full h-56 object-cover rounded-lg">
+                    <h3 class="text-2xl font-semibold mt-4 text-blue-900 font-playfair"><i
+                            class="fas fa-monument mr-2"></i>Hampi Heritage Tour</h3>
+                    <p class="text-gray-700">Duration: 3 Days / 2 Nights</p>
+                    <p class="text-gray-700">Price: 4500 per person</p>
+                    <p class="text-gray-700 mt-3">Description: Discover the ancient ruins of Hampi with our Luxury
+                        Coach. Includes historical guided tours, meals, and comfortable lodging.</p>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="https://wa.me/916302078906?text=Hello%20TravelWheels!%20I’m%20interested%20in%20the%20Hampi%20Heritage%20Tour"
+                            class="btn-primary bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600"
+                            target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                        <a href="tel:‪+916302078906‬"
+                            class="btn-primary bg-blue-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-600">Call
+                            Us</a>
+                    </div>
+                </div>
+                    <div class="bg-card rounded-xl shadow-lg p-6 animate-card border-t-4 border-coral-500 glow-border">
+                        <img src="./kerala.png" alt="Kerala Backwaters"
+                            class="w-full h-56 object-cover rounded-lg">
+                        <h3 class="text-2xl font-semibold mt-4 text-blue-900 font-playfair"><i
+                                class="fas fa-water mr-2"></i>Kerala Backwaters</h3>
+                        <p class="text-gray-700">Duration: 6 Days / 5 Nights</p>
+                        <p class="text-gray-700">Price: 7000 per person</p>
+                        <p class="text-gray-700 mt-3">Description: Cruise through Kerala's serene backwaters with our
+                            Double Decker bus for land tours. Includes houseboat stay, local cuisine, and guided
+                            excursions.</p>
+                           <div class="mt-4 flex space-x-4">
+                        <a href="https://wa.me/916302078906?text=Hello%20TravelWheels!%20I’m%20interested%20in%20the%20Hampi%20Heritage%20Tour"
+                            class="btn-primary bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600"
+                            target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                        <a href="tel:‪+916302078906‬"
+                            class="btn-primary bg-blue-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-600">Call
+                            Us</a>
+                    </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="buses" class="py-16 bg-card fade-in-section section-bg">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-12 text-blue-900  font-playfair">Our Vehicles</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+                    <div class="bg-card rounded-xl shadow-lg p-6  animate-card border-t-4 border-coral-500 glow-border">
+                        <img src="./luxury bus.png" alt="Luxury Coach"
+                            class="w-full h-56 object-cover rounded-lg">
+                        <h3 class="text-2xl font-semibold mt-4 text-blue-900 font-playfair"><i
+                                class="fas fa-bus mr-2"></i>Luxury Coach</h3>
+                        <p class="text-gray-700">Model: Volvo B9R</p>
+                        <p class="text-gray-700">Seating Capacity: 40</p>
+                        <p class="text-gray-700">Cost per Day: $500</p>
+                        <p class="text-gray-700 mt-3">Features: Reclining seats, Wi-Fi, AC, onboard restroom</p>
+                        <div class="mt-4 flex space-x-4">
+                            <a href="https://wa.me/916302078906?text=Hello%20TravelWheels!%20I’m%20interested%20in%20the%20Luxury%20Coach"
+                                class="btn-primary bg-green-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-green-600"
+                                target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                            <a href="tel:+916302078906"
+                                class="btn-primary bg-blue-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-600">Call
+                                Us</a>
+                        </div>
+                    </div>
+                    <div class="bg-card rounded-xl shadow-lg p-6 animate-card border-t-4 border-coral-500 glow-border">
+                        <img src="./mini bus.avif" alt="Mini Bus"
+                            class="w-full h-56 object-cover rounded-lg">
+                        <h3 class="text-2xl font-semibold mt-4 text-blue-900 font-playfair"><i
+                                class="fas fa-bus-alt mr-2"></i>Mini Bus</h3>
+                        <p class="text-gray-700">Model: Mercedes Sprinter</p>
+                        <p class="text-gray-700">Seating Capacity: 20</p>
+                        <p class="text-gray-700">Cost per Day: $300</p>
+                        <p class="text-gray-700 mt-3">Features: Compact design, AC, comfortable seating</p>
+                        <div class="mt-4 flex space-x-4">
+                            <a href="https://wa.me/916302078906?text=Hello%20TravelWheels!%20I’m%20interested%20in%20the%20Mini%20Bus"
+                                class="btn-primary bg-green-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-green-600"
+                                target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                            <a href="tel:+916302078906"
+                                class="btn-primary bg-blue-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-600">Call
+                                Us</a>
+                        </div>
+                    </div>
+                    <div class="bg-card rounded-xl shadow-lg p-6 animate-card border-t-4 border-coral-500 glow-border">
+                        <img src="./double decker bus.jpg" alt="Double Decker"
+                            class="w-full h-56 object-cover rounded-lg">
+                        <h3 class="text-2xl font-semibold mt-4 text-blue-900 font-playfair"><i
+                                class="fas fa-bus mr-2"></i>Double Decker</h3>
+                        <p class="text-gray-700">Model: Neoplan Skyliner</p>
+                        <p class="text-gray-700">Seating Capacity: 70</p>
+                        <p class="text-gray-700">Cost per Day: $800</p>
+                        <p class="text-gray-700 mt-3">Features: Panoramic views, spacious seating, entertainment system
+                        </p>
+                        <div class="mt-4 flex space-x-4">
+                            <a href="https://wa.me/916302078906?text=Hello%20TravelWheels!%20I’m%20interested%20in%20the%20Double%20Decker"
+                                class="btn-primary bg-green-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-green-600"
+                                target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                            <a href="tel:+916302078906"
+                                class="btn-primary bg-blue-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-600">Call
+                                Us</a>
+                        </div>
+                    </div>
+                    <div class="bg-card rounded-xl shadow-lg p-6 animate-card border-t-4 border-coral-500 glow-border">
+                        <img src="./executive oach.avif" alt="Executive Coach"
+                            class="w-full h-56 object-cover rounded-lg">
+                        <h3 class="text-2xl font-semibold mt-4 text-blue-900 font-playfair"><i
+                                class="fas fa-bus mr-2"></i>Executive Coach</h3>
+                        <p class="text-gray-700">Model: Setra S 517 HD</p>
+                        <p class="text-gray-700">Seating Capacity: 50</p>
+                        <p class="text-gray-700">Cost per Day: $600</p>
+                        <p class="text-gray-700 mt-3">Features: Leather seats, Wi-Fi, power outlets, premium sound
+                            system</p>
+                        <div class="mt-4 flex space-x-4">
+                            <a href="https://wa.me/916302078906?text=Hello%20TravelWheels!%20I’m%20interested%20in%20the%20Executive%20Coach"
+                                class="btn-primary bg-green-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-green-600"
+                                target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                            <a href="tel:+916302078906"
+                                class="btn-primary bg-blue-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-600">Call
+                                Us</a>
+                        </div>
+                    </div>
+                    <div class="bg-card rounded-xl shadow-lg p-6 animate-card border-t-4 border-coral-500 glow-border">
+                        <img src="./sleeepr.webp" alt="Sleeper Bus" class="w-full h-56 object-cover rounded-lg">
+                        <h3 class="text-2xl font-semibold mt-4 text-blue-900 font-playfair"><i
+                                class="fas fa-bed mr-2"></i>Sleeper Bus</h3>
+                        <p class="text-gray-700">Model: Prevost H3-45</p>
+                        <p class="text-gray-700">Seating Capacity: 30</p>
+                        <p class="text-gray-700">Cost per Day: $700</p>
+                        <p class="text-gray-700 mt-3">Features: Bunk beds, privacy curtains, onboard kitchenette,
+                            restroom</p>
+                        <div class="mt-4 flex space-x-4">
+                            <a href="https://wa.me/916302078906?text=Hello%20TravelWheels!%20I’m%20interested%20in%20the%20Sleeper%20Bus"
+                                class="btn-primary bg-green-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-green-600"
+                                target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                            <a href="tel:+916302078906"
+                                class="btn-primary bg-blue-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-600">Call
+                                Us</a>
+                        </div>
+                    </div>
+                    <div class="bg-card rounded-xl shadow-lg p-6 animate-card border-t-4 border-coral-500 glow-border">
+                        <img src="./accesible mini bus.jpg" alt="Accessible Minibus"
+                            class="w-full h-56 object-cover rounded-lg">
+                        <h3 class="text-2xl font-semibold mt-4 text-blue-900 font-playfair"><i
+                                class="fas fa-wheelchair mr-2"></i>Accessible Minibus</h3>
+                        <p class="text-gray-700">Model: Ford Transit</p>
+                        <p class="text-gray-700">Seating Capacity: 15</p>
+                        <p class="text-gray-700">Cost per Day: $350</p>
+                        <p class="text-gray-700 mt-3">Features: Wheelchair lift, spacious interior, AC, safety harnesses
+                        </p>
+                        <div class="mt-4 flex space-x-4">
+                            <a href="https://wa.me/916302078906?text=Hello%20TravelWheels!%20I’m%20interested%20in%20the%20Accessible%20Minibus"
+                                class="btn-primary bg-green-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-green-600"
+                                target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                            <a href="tel:+916302078906"
+                                class="btn-primary bg-blue-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-600">Call
+                                Us</a>
+                        </div>
+                    </div>
+                    <div class="bg-card rounded-xl shadow-lg p-6 animate-card border-t-4 border-coral-500 glow-border">
+                        <img src="./party bus.jpeg.jpg" alt="Party Bus" class="w-full h-56 object-cover rounded-lg">
+                        <h3 class="text-2xl font-semibold mt-4 text-blue-900 font-playfair"><i
+                                class="fas fa-music mr-2"></i>Party Bus</h3>
+                        <p class="text-gray-700">Model: Freightliner M2</p>
+                        <p class="text-gray-700">Seating Capacity: 25</p>
+                        <p class="text-gray-700">Cost per Day: $450</p>
+                        <p class="text-gray-700 mt-3">Features: LED lighting, premium audio, dance floor, beverage bar
+                        </p>
+                        <div class="mt-4 flex space-x-4">
+                            <a href="https://wa.me/916302078906?text=Hello%20TravelWheels!%20I’m%20interested%20in%20the%20Party%20Bus"
+                                class="btn-primary bg-green-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-green-600"
+                                target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                            <a href="tel:+916302078906"
+                                class="btn-primary bg-blue-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-600">Call
+                                Us</a>
+                        </div>
+                    </div>
+                    <div class="bg-card rounded-xl shadow-lg p-6 animate-card border-t-4 border-coral-500 glow-border">
+                        <img src="./luxury van.jpeg.jpg" alt="Luxury Van" class="w-full h-56 object-cover rounded-lg">
+                        <h3 class="text-2xl font-semibold mt-4 text-blue-900 font-playfair"><i
+                                class="fas fa-car mr-2"></i>Luxury Van</h3>
+                        <p class="text-gray-700">Model: Mercedes-Benz Metris</p>
+                        <p class="text-gray-700">Seating Capacity: 8</p>
+                        <p class="text-gray-700">Cost per Day: $200</p>
+                        <p class="text-gray-700 mt-3">Features: Plush seating, climate control, tinted windows, USB
+                            charging</p>
+                        <div class="mt-4 flex space-x-4">
+                            
+                          
+                        </div>
+                    </div>
+                    <div class="bg-card rounded-xl shadow-lg p-6 animate-card border-t-4 border-coral-500 glow-border">
+                        <img src="./tour coach.jpg" alt="Tour Coach" class="w-full h-56 object-cover rounded-lg">
+                        <h3 class="text-2xl font-semibold mt-4 text-blue-900 font-playfair"><i
+                                class="fas fa-bus mr-2"></i>Tour Coach</h3>
+                        <p class="text-gray-700">Model: Van Hool TX</p>
+                        <p class="text-gray-700">Cost per Day: $650</p>
+                        <p class="text-gray-700 mt-3">Features: Panoramic windows, reclining seats, Wi-Fi, onboard
+                            entertainment</p>
+                        <div class="mt-4 flex space-x-4">
+                            <a href="https://wa.me/916302078906?text=Hello%20TravelWheels!%20I’m%20interested%20in%20the%20Tour%20Coach"
+                                class="btn-primary bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600"
+                                target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                            <a href="tel:+916302078906"
+                                class="btn-primary bg-blue-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-600">Call
+                                Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section id="about" class="py-16 fade-in-section section-bg">
+        <div class="container mx-auto px-4">
+            <div class="about-box text-white">
+                <h2 class="text-4xl font-bold mb-6 font-playfair">About Us</h2>
+                <p class="text-lg mb-8 max-w-2xl mx-auto">At TravelWheels, we have been crafting unforgettable travel
+                    experiences for over 15 years. With more than 500 tours hosted across stunning destinations, we take
+                    pride in serving over 50,000 active customers who trust us for their journey needs. Our fleet of
+                    luxury buses and expert team ensure every trip is a memorable adventure.</p>
+                <div class="flex justify-center space-x-12 mt-8">
+                    <div class="text-center">
+                        <h3 class="text-3xl font-bold text-coral-500">15+</h3>
+                        <p class="text-gray-200">Years of Experience</p>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-3xl font-bold text-coral-500">500+</h3>
+                        <p class="text-gray-200">Tours Hosted</p>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-3xl font-bold text-coral-500">50,000+</h3>
+                        <p class="text-gray-200">Active Customers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="whatsapp" class="fade-in-section whatsapp-container">
+        <div class="container mx-auto px-4">
+            <h2 class="text-5xl font-bold text-center text-white mb-8 font-playfair">Feel free to Contact us!</h2>
+            <p class="text-center text-white mb-10 text-xl">Chat with us on WhatsApp for instant support and bookings!
+            </p>
+            <a href="https://wa.me/916302078906?text=Hello%20TravelWheels!%20I’m%20interested%20in%20your%20tours."
+                class="whatsapp-btn" target="_blank" aria-label="Chat with us on WhatsApp">
+                <i class="fab fa-whatsapp"></i> Contact via WhatsApp
+                <span class="whatsapp-tooltip">Start a WhatsApp chat</span>
+            </a>
+            <div class="mt-8 text-white text-center flex justify-center space-x-10">
+                <p class="text-2xl font-bold">Address: 123 Travel Lane, Tourism City, India</p>
+                <p class="text-2xl font-bold">Phone: +91 6302078906</p>
+                <p class="text-2xl font-bold">Email: info@travelwheels.com</p>
+            </div>
+        </div>
+    </section>
+
+    <a href="#"
+        class="sticky-cta btn-primary bg-coral-500 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-coral-600 booking-btn"
+        data-tour="General Inquiry"><i class="fas fa-ticket-alt mr-2"></i>Book Now</a>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
