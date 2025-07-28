@@ -1,0 +1,248 @@
+/* Your CSS code goes here */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffe6c9;
+}
+#home{
+    background-image: url(''); /* Include the correct file extension */
+    background-size: cover; /* Scale to fill screen */
+    background-repeat: no-repeat; /* Prevent tiling */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Keep it fixed during scroll */
+    min-height: 40vh; /* Make sure body is full screen height */
+}
+.animate-card {
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.3s ease;
+}
+.bg-card{
+    background-color: rgba(167, 198, 122, 0.677);
+}
+.animate-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    border-color: #ff6b6b;
+}
+
+.btn-primary {
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+.btn-primary:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    animation: none;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.hero-carousel {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    animation: slide 12s infinite ease-in-out;
+}
+
+@keyframes slide {
+    0%, 33% {
+        background-image: linear-gradient(rgba(0, 30, 60, 0.7), rgba(0, 30, 60, 0.7)), url('https://source.unsplash.com/random/1600x900/?travel');
+    }
+    33%, 66% {
+        background-image: linear-gradient(rgba(0, 30, 60, 0.7), rgba(0, 30, 60, 0.7)), url('https://source.unsplash.com/random/1600x900/?destination');
+    }
+    66%, 100% {
+        background-image: linear-gradient(rgba(0, 30, 60, 0.7), rgba(0, 30, 60, 0.7)), url('https://source.unsplash.com/random/1600x900/?adventure');
+    }
+}
+
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #ff6b6b;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link.active {
+    color: #ff6b6b;
+}
+
+header {
+    background: rgba(0, 30, 60, 0.85);
+    backdrop-filter: blur(10px);
+    transition: background-color 0.3s ease;
+}
+
+header.scrolled {
+    background: rgba(0, 30, 60, 0.95);
+}
+
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section-bg {
+    background: url('https://source.unsplash.com/random/1600x200/?pattern') repeat;
+    background-size: 150px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 200;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.sticky-cta {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 100;
+}
+
+.text-animate {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: textFadeIn 1s ease-out forwards;
+}
+
+.text-animate-delay {
+    animation-delay: 0.3s;
+}
+
+@keyframes textFadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.glow-border:hover {
+    box-shadow: 0 0 15px rgba(255, 107, 107, 0.5);
+}
+
+.whatsapp-container {
+    text-align: center;
+    padding: 80px 20px;
+    min-height: 50vh;
+    background: linear-gradient(rgba(0, 30, 60, 0.8), rgba(0, 30, 60, 0.8)), url('https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    background: #25D366;
+    color: #FFF;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.whatsapp-btn:hover {
+    background: #1DA851;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(37, 211, 102, 0.5);
+}
+
+.whatsapp-btn i {
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+.whatsapp-tooltip {
+    visibility: hidden;
+    background-color: #001e3c;
+    color: #FFF;
+    text-align: center;
+    border-radius: 6px;
+    padding: 6px 12px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 14px;
+}
+
+.whatsapp-btn:hover .whatsapp-tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.about-box {
+    background: linear-gradient(135deg, #4e2c1e, #2e1a10);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* New class to hide sections */
+.hidden {
+    display: none !important;
+}
+
+/* Ensure search input text is visible */
+#search-input {
+    color: #000000;
+    background-color: #ffffff;
+    caret-color: #000000;
+}
